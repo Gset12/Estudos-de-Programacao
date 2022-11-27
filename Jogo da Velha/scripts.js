@@ -11,13 +11,6 @@ var posicaoGanhar = [
  
 var posAtual= "X";
 
-function init(){
-    document.querySelectorAll("casa").forEach((item) => {
-        item.innerHTML = "Teste";
-        item.addEventListener("click", blocoAcionado);
-    })
-}
-
 function blocoAcionado(value){
     var casa = "casa" + String(value);
     if(document.getElementById(casa).innerHTML === ""){
